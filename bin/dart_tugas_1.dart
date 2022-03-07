@@ -59,27 +59,27 @@ void main(List<String> arguments) {
   {
     for(int j=NInt-1;j>=0;j--)
     {
-      if(start>NInt){
-        start=1;
-      }
       if(j<i){
         stdout.write(" ");
       }
       else{
         stdout.write(start);
         start+=1;
-      }  
+      } 
+      if(start>NInt){
+        start=1;
+      } 
     }
     for(int z=0;z<NInt;z++){
-      if(end==0){
-        end=NInt;
-      }
        if(z<i){
         stdout.write(" ");
       }
       else{
         stdout.write(end);
         end--;
+      }
+       if(end==0){
+        end=NInt;
       }
     }
     print(""); 
